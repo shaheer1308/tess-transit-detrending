@@ -33,10 +33,10 @@ Full text and tables: `docs/paper_draft.md`. Settings and logs: `docs/project_lo
 
 The analysis has no random steps. Running it again gives identical tables.
 
-In Google Colab (replace `YOUR_USERNAME`):
+In Google Colab (shaheer1308):
 
 ```
-!git clone https://github.com/YOUR_USERNAME/tess-transit-detrending
+!git clone https://github.com/shaheer1308/tess-transit-detrending
 %cd tess-transit-detrending
 !pip install -r requirements.txt
 !python tests/test_transit_detrend.py
