@@ -1,6 +1,6 @@
 # How Light Curve Detrending Changes the Measured Transit Depth of WASP-18 b in TESS Data
 
-**Author:** [Your name]
+**Author:** Shaheer
 **Status:** First draft. Numbers come from the files in `results/`. Please read every claim and check it against the tables before sharing.
 
 ## Abstract
