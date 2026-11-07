@@ -1,0 +1,30 @@
+{
+  "predicted_bias_from_orbital_brightness_change": {
+    "transit position (phase 0)": {
+      "degree_0_bias_ppm": 240.01438967378476,
+      "degree_2_bias_ppm": 43.5388788319422
+    },
+    "injection position (phase 0.25)": {
+      "degree_0_bias_ppm": -192.5068248781272,
+      "degree_2_bias_ppm": -39.623816455194515
+    },
+    "injection position (phase 0.75)": {
+      "degree_0_bias_ppm": -180.01438652595314,
+      "degree_2_bias_ppm": -39.028656109898684
+    }
+  },
+  "expected_central_depth_from_published_parameters_ppm": 10523.778999371305,
+  "radius_ratio_squared_ppm": 9440.065599999998,
+  "our_fitted_harmonics": {
+    "cos1_ppm": -165.4169707485277,
+    "sin1_ppm": 20.96710436931358,
+    "cos2_ppm": -190.48638872512726
+  },
+  "published_harmonics": {
+    "B1_cos1_ppm": -174.4,
+    "B2_cos2_ppm": -190.5,
+    "A1_sin1_ppm": 21.0,
+    "transit_depth_rp_over_rs_squared_ppm": 9439,
+    "source": "Shporer et al. 2019, AJ, Table 2"
+  }
+}

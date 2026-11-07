@@ -1,0 +1,70 @@
+{
+  "bls_period": 0.9415499999999514,
+  "bls_t0": 1354.4565072617193,
+  "period": 0.9414589230706665,
+  "t0": 1354.4577623150567,
+  "t14": 0.09083773251996677,
+  "t12": 0.012177836661972466,
+  "trapezoid_depth_pdcsap": 0.010520560772672872,
+  "one_sigma": {
+    "period": 3.7521642728461553e-06,
+    "t0": 6.11373985292603e-05,
+    "depth": 1.7722548087686484e-05,
+    "t14": 0.00012915138753287955,
+    "t12": 0.00011321816233138016,
+    "baseline": 4.7142550305675185e-06
+  },
+  "rms_residual_ppm": 606.711645424218,
+  "half_window": 0.17,
+  "mask_half": 0.06812829938997508,
+  "central_half": 0.02,
+  "n_points": 18299,
+  "phase_curve_coefficients_ppm": {
+    "constant_minus_1": 59.32844434930473,
+    "cos_1": -165.4169707485277,
+    "sin_1": 20.96710436931358,
+    "cos_2": -190.48638872512726,
+    "sin_2": 2.402774866567675
+  },
+  "n_real_transits_used": 25,
+  "real_transits_unusable": [
+    [
+      14,
+      1367.638187238046
+    ],
+    [
+      15,
+      1368.5796461611167
+    ],
+    [
+      20,
+      1373.28694077647
+    ],
+    [
+      23,
+      1376.1113175456821
+    ]
+  ],
+  "n_injections_per_depth": 51,
+  "injection_depths": [
+    0.0105,
+    0.003
+  ],
+  "injection_shifts": [
+    0.25,
+    0.75
+  ],
+  "methods": [
+    "SAP none",
+    "SAP local poly 0",
+    "SAP local poly 1",
+    "SAP local poly 2",
+    "SAP local poly 3",
+    "SAP Savgol 0.5 d",
+    "SAP Savgol 1.0 d",
+    "SAP Savgol 2.0 d",
+    "PDCSAP none",
+    "PDCSAP local poly 1"
+  ],
+  "sap_over_pdcsap_median_ratio": 0.9608702268974566
+}

@@ -1,0 +1,81 @@
+background,depth_inj,position,method,n,mean_bias,rmse
+as observed,0.003,first 1.5 d of orbit,PDCSAP local poly 1,5,-0.00022797760563892673,0.0002833781371220166
+as observed,0.003,first 1.5 d of orbit,PDCSAP none,5,-0.00010559139402195067,0.00017711837424516075
+as observed,0.003,first 1.5 d of orbit,SAP Savgol 0.5 d,5,7.302993920970374e-05,0.00031249819560315144
+as observed,0.003,first 1.5 d of orbit,SAP Savgol 1.0 d,5,-8.125410921326643e-05,0.00024061241312958433
+as observed,0.003,first 1.5 d of orbit,SAP Savgol 2.0 d,5,-0.0001390552875735392,0.00021937077694213534
+as observed,0.003,first 1.5 d of orbit,SAP local poly 0,5,-0.00022341798838676225,0.00025058415187476286
+as observed,0.003,first 1.5 d of orbit,SAP local poly 1,5,-0.0002213262743712337,0.00024952632287016774
+as observed,0.003,first 1.5 d of orbit,SAP local poly 2,5,-7.053412178519032e-05,8.901497521252274e-05
+as observed,0.003,first 1.5 d of orbit,SAP local poly 3,5,-6.89239720492037e-05,8.864305867507742e-05
+as observed,0.003,first 1.5 d of orbit,SAP none,5,0.0016967226234005733,0.002036125766478566
+as observed,0.003,later in orbit,PDCSAP local poly 1,46,-0.00016287543458933486,0.00020663144880484784
+as observed,0.003,later in orbit,PDCSAP none,46,-0.00010091529263807395,0.0002082989158013218
+as observed,0.003,later in orbit,SAP Savgol 0.5 d,46,-2.190401195875518e-05,0.00022087241281848962
+as observed,0.003,later in orbit,SAP Savgol 1.0 d,46,-0.00020900088201699813,0.00028580708727727407
+as observed,0.003,later in orbit,SAP Savgol 2.0 d,46,-0.0001836539679192142,0.00023584966795561502
+as observed,0.003,later in orbit,SAP local poly 0,46,-0.00016682371877002833,0.000197359143293394
+as observed,0.003,later in orbit,SAP local poly 1,46,-0.00016714940490054214,0.00019734661770747338
+as observed,0.003,later in orbit,SAP local poly 2,46,-7.602791555355163e-06,0.00013946663239937886
+as observed,0.003,later in orbit,SAP local poly 3,46,-7.951861194387355e-06,0.0001399432037470414
+as observed,0.003,later in orbit,SAP none,46,-0.00018115384141541453,0.00029390060668602996
+as observed,0.0105,first 1.5 d of orbit,PDCSAP local poly 1,5,-0.00022626262866576563,0.0002812464058999574
+as observed,0.0105,first 1.5 d of orbit,PDCSAP none,5,-0.0001047970756115537,0.00017578598928340766
+as observed,0.0105,first 1.5 d of orbit,SAP Savgol 0.5 d,5,7.248056654753677e-05,0.0003101474067696083
+as observed,0.0105,first 1.5 d of orbit,SAP Savgol 1.0 d,5,-8.064286967562027e-05,0.00023880238996172462
+as observed,0.0105,first 1.5 d of orbit,SAP Savgol 2.0 d,5,-0.00013800923475830972,0.0002177205454204675
+as observed,0.0105,first 1.5 d of orbit,SAP local poly 0,5,-0.0002217373114430845,0.00024869911562703384
+as observed,0.0105,first 1.5 d of orbit,SAP local poly 1,5,-0.0002196613324878107,0.00024764924421264854
+as observed,0.0105,first 1.5 d of orbit,SAP local poly 2,5,-7.000352407875686e-05,8.834535403503268e-05
+as observed,0.0105,first 1.5 d of orbit,SAP local poly 3,5,-6.84054868032271e-05,8.797623526485676e-05
+as observed,0.0105,first 1.5 d of orbit,SAP none,5,0.0016839589125926511,0.0020208088725482405
+as observed,0.0105,later in orbit,PDCSAP local poly 1,46,-0.00016165019310553848,0.0002050770497416895
+as observed,0.0105,later in orbit,PDCSAP none,46,-0.00010015615051699457,0.00020673197310477486
+as observed,0.0105,later in orbit,SAP Savgol 0.5 d,46,-2.173923754587655e-05,0.00021921088513932648
+as observed,0.0105,later in orbit,SAP Savgol 1.0 d,46,-0.00020742865873207695,0.0002836570841132518
+as observed,0.0105,later in orbit,SAP Savgol 2.0 d,46,-0.00018227241851162754,0.00023407547286069226
+as observed,0.0105,later in orbit,SAP local poly 0,46,-0.00016556877605120013,0.0001958744957762464
+as observed,0.0105,later in orbit,SAP local poly 1,46,-0.00016589201218568904,0.00019586206441481578
+as observed,0.0105,later in orbit,SAP local poly 2,46,-7.545599041201788e-06,0.0001384174852148149
+as observed,0.0105,later in orbit,SAP local poly 3,46,-7.89204278021723e-06,0.0001388904715222591
+as observed,0.0105,later in orbit,SAP none,46,-0.00017979109937875902,0.00029168971947428574
+orbital brightness change removed,0.003,first 1.5 d of orbit,PDCSAP local poly 1,5,-3.9363215730190035e-05,0.00017218014457643182
+orbital brightness change removed,0.003,first 1.5 d of orbit,PDCSAP none,5,1.7035080752772316e-05,0.00014112143763874547
+orbital brightness change removed,0.003,first 1.5 d of orbit,SAP Savgol 0.5 d,5,0.0001671803389799357,0.00034665563680937636
+orbital brightness change removed,0.003,first 1.5 d of orbit,SAP Savgol 1.0 d,5,0.000133114635010048,0.0002605611688256704
+orbital brightness change removed,0.003,first 1.5 d of orbit,SAP Savgol 2.0 d,5,5.159497828830777e-05,0.00020210235763946046
+orbital brightness change removed,0.003,first 1.5 d of orbit,SAP local poly 0,5,-3.428668033360356e-05,0.00012140925988158976
+orbital brightness change removed,0.003,first 1.5 d of orbit,SAP local poly 1,5,-3.272563775320331e-05,0.00012177570976359217
+orbital brightness change removed,0.003,first 1.5 d of orbit,SAP local poly 2,5,-3.082842917707402e-05,6.263034467264191e-05
+orbital brightness change removed,0.003,first 1.5 d of orbit,SAP local poly 3,5,-2.9332442999338743e-05,6.299661635763376e-05
+orbital brightness change removed,0.003,first 1.5 d of orbit,SAP none,5,0.0018258185222095574,0.002149107209317915
+orbital brightness change removed,0.003,later in orbit,PDCSAP local poly 1,46,2.504530018239494e-05,0.00012864588450887135
+orbital brightness change removed,0.003,later in orbit,PDCSAP none,46,1.8453671347005146e-05,0.00018037486944076365
+orbital brightness change removed,0.003,later in orbit,SAP Savgol 0.5 d,46,7.490358495045356e-05,0.00023222535984466832
+orbital brightness change removed,0.003,later in orbit,SAP Savgol 1.0 d,46,1.819598906171299e-05,0.00019558527960733812
+orbital brightness change removed,0.003,later in orbit,SAP Savgol 2.0 d,46,1.476433595291105e-05,0.00014800822051691745
+orbital brightness change removed,0.003,later in orbit,SAP local poly 0,46,2.0857711546770696e-05,0.00010622240925178237
+orbital brightness change removed,0.003,later in orbit,SAP local poly 1,46,2.0772134654456676e-05,0.00010684881511954645
+orbital brightness change removed,0.003,later in orbit,SAP local poly 2,46,3.200266811876056e-05,0.00014268919714834066
+orbital brightness change removed,0.003,later in orbit,SAP local poly 3,46,3.162913227333177e-05,0.00014314170525150875
+orbital brightness change removed,0.003,later in orbit,SAP none,46,-5.526725710983459e-05,0.0002360864418178807
+orbital brightness change removed,0.0105,first 1.5 d of orbit,PDCSAP local poly 1,5,-3.9067103274950316e-05,0.00017088490778176558
+orbital brightness change removed,0.0105,first 1.5 d of orbit,PDCSAP none,5,1.6906933204372322e-05,0.00014005984206972075
+orbital brightness change removed,0.0105,first 1.5 d of orbit,SAP Savgol 0.5 d,5,0.00016592271356134815,0.0003440478963118484
+orbital brightness change removed,0.0105,first 1.5 d of orbit,SAP Savgol 1.0 d,5,0.00013211327115589567,0.00025860107979233936
+orbital brightness change removed,0.0105,first 1.5 d of orbit,SAP Savgol 2.0 d,5,5.12068515709372e-05,0.0002005820289711032
+orbital brightness change removed,0.0105,first 1.5 d of orbit,SAP local poly 0,5,-3.402875645957225e-05,0.00012049595050445938
+orbital brightness change removed,0.0105,first 1.5 d of orbit,SAP local poly 1,5,-3.247945692766117e-05,0.00012085964374233254
+orbital brightness change removed,0.0105,first 1.5 d of orbit,SAP local poly 2,5,-3.059652023145419e-05,6.215920366456399e-05
+orbital brightness change removed,0.0105,first 1.5 d of orbit,SAP local poly 3,5,-2.9111787711013844e-05,6.252272004598933e-05
+orbital brightness change removed,0.0105,first 1.5 d of orbit,SAP none,5,0.0018120836787625968,0.002132940404834483
+orbital brightness change removed,0.0105,later in orbit,PDCSAP local poly 1,46,2.4856895216060357e-05,0.0001276781371329377
+orbital brightness change removed,0.0105,later in orbit,PDCSAP none,46,1.8314852354864404e-05,0.00017901798727344633
+orbital brightness change removed,0.0105,later in orbit,SAP Savgol 0.5 d,46,7.434011766139297e-05,0.0002304784288528131
+orbital brightness change removed,0.0105,later in orbit,SAP Savgol 1.0 d,46,1.805910850200131e-05,0.0001941139760997813
+orbital brightness change removed,0.0105,later in orbit,SAP Savgol 2.0 d,46,1.4653270236052098e-05,0.00014689481865746864
+orbital brightness change removed,0.0105,later in orbit,SAP local poly 0,46,2.0700807999472212e-05,0.00010542334398659059
+orbital brightness change removed,0.0105,later in orbit,SAP local poly 1,46,2.0615874865149548e-05,0.00010604503767381863
+orbital brightness change removed,0.0105,later in orbit,SAP local poly 2,46,3.176192588110482e-05,0.0001416158080022538
+orbital brightness change removed,0.0105,later in orbit,SAP local poly 3,46,3.1391199984411075e-05,0.00014206491208262423
+orbital brightness change removed,0.0105,later in orbit,SAP none,46,-5.4851505426521145e-05,0.00023431046557552984
