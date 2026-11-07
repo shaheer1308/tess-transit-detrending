@@ -1,7 +1,7 @@
 # How Light Curve Detrending Changes the Measured Transit Depth of WASP-18 b in TESS Data
 
-**Author:** Shaheer
-**Status:** First draft. Numbers come from the files in `results/`. Please read every claim and check it against the tables before sharing.
+**Author:** Muhammad Shaheer Ahmad, Pre Engineering, Government College, Lahore
+**Status:** Draft for personal use. Numbers come from the files in `results/`. The Google Doc version is the main copy.
 
 ## Abstract
 
@@ -45,7 +45,7 @@ We measured the depth of 25 transits in sector 2 with ten methods. The data and 
 
 *Table 2. Mean central depth over 25 transits, with standard errors. Depth is measured in the central 0.04 days of the transit (see Section 6).*
 
-**Finding 3. Injection tests show which methods are most accurate on this light curve.** We injected a transit of 10,500 ppm into transit free parts of the real light curves, one at a time, 51 times, and measured it back. Without detrending, the typical error is 691 ppm. For local polynomial fits of degree 2 or 3 it is 134 ppm. Most of the raw error comes from injections in the first 1.5 days of an orbit. There, the mean error is 1,684 high ppm (5 injections). Later in the orbit it is 180 low ppm (46 injections). Five injections is a small sample, so we treat this as a clear sign and not a precise number (Figures 5 and 6).
+**Finding 3. Injection tests show which methods are most accurate on this light curve.** We injected a transit of 10,500 ppm into transit free parts of the real light curves, one at a time, 51 times, and measured it back. Without detrending, the typical error is 691 ppm. For local polynomial fits of degree 2 or 3 it is 134 ppm. Most of the raw error comes from injections in the first 1.5 days of an orbit. There, the mean error is 1,684 ppm too high (5 injections). Later in the orbit it is 180 ppm too low (46 injections). Five injections is a small sample, so we treat this as a clear sign and not a precise number (Figures 5 and 6).
 
 | Method | RMSE as observed (ppm) | Mean error as observed (ppm) | RMSE with orbital change removed (ppm) | Mean error with orbital change removed (ppm) |
 |---|---|---|---|---|
@@ -93,7 +93,7 @@ This brightness change has curvature at the transit. Transits sit at its minimum
 
 **Reason 5. SAP and PDCSAP differ in scale.** After removing the orbital change, PDCSAP depths are higher than SAP depths by about 1.5 percent. This is a difference in flux scaling, not in detrending. We did not trace it. A possible cause is the crowding correction applied by the pipeline, which can be checked in the file header. For this reason we compare methods within SAP and within PDCSAP, not across them.
 
-**A reference check.** Published parameters (Shporer et al. 2019: radius ratio 0.09716, impact parameter 0.318, scaled semi major axis 3.562, limb darkening 0.2192 and 0.3127) give a squared radius ratio of about 9,440 ppm. A simple limb darkened calculation using those numbers predicts a mean depth of about 10,524 ppm in our central window. Our values with the orbital change removed are 10,320 to 10,443 ppm for SAP methods and 10,504 ppm for PDCSAP. This is a rough sanity check. It is not a measurement of truth. Published depths for this planet differ by method and by definition.
+**A reference check.** Published parameters (Shporer et al. 2019: radius ratio 0.09716, impact parameter 0.318, scaled semi major axis 3.562, limb darkening 0.2192 and 0.3127) give a squared radius ratio of about 9,440 ppm. A simple limb darkened calculation using those numbers (limb darkening from Claret 2017, as used by Shporer et al.) predicts a mean depth of about 10,524 ppm in our central window. Our values with the orbital change removed are 10,320 to 10,443 ppm for SAP methods and 10,504 ppm for PDCSAP. This is a rough sanity check. It is not a measurement of truth. Published depths for this planet differ by method and by definition.
 
 ## 4. How it happened: a toy simulation
 
@@ -122,12 +122,12 @@ These simulations show three things. A drift can bias depth. Detrending can remo
 1. **Report the choices.** The depth changed by hundreds of ppm with the method, the window, and the measuring width. A depth without these settings cannot be compared with another depth.
 2. **Test with injections.** Real data has no known true depth. Injecting a transit of known depth into the real light curve shows how a method behaves on that data. This is cheap and it is informative.
 3. **Look at single transits, not only the mean.** The undetrended mean looked fine while single transits were up to 27 percent deeper than the local polynomial result.
-4. **Treat the orbital brightness change as signal.** Fitting a smooth curve through everything outside the transit can absorb real variation. For hot, massive planets this changes the baseline at the level of 2 percent of the depth.
+4. **Treat the orbital brightness change as signal.** Fitting a smooth curve through everything outside the transit can absorb real variation. For a hot, massive planet like WASP-18 b, the curvature of this change shifts the measured depth by about 2 percent.
 5. **Be careful with the word raw.** SAP is raw in the sense that the pipeline did not correct it. PDCSAP is already partly detrended by a method the analyst did not choose.
 
 ## 6. Methods
 
-**Data.** TESS sector 2 light curves of WASP-18 (TIC 100100827), SPOC pipeline, 120 second cadence, from MAST through Lightkurve 2.6.0. The file is `tess2018234235059-s0002-0000000100100827-0121-s_lc.fits`. We used the SAP and PDCSAP flux columns with the default quality flags. There are 18,299 cadences and no missing values. Each flux column was divided by its median.
+**Data.** TESS (Ricker et al. 2015) sector 2 light curves of WASP-18 (TIC 100100827), made by the SPOC pipeline (Jenkins et al. 2016) at 120 second cadence. We downloaded them from MAST with Lightkurve 2.6.0 (Lightkurve Collaboration 2018). The file is `tess2018234235059-s0002-0000000100100827-0121-s_lc.fits`. We used the SAP and PDCSAP flux columns with the default quality flags. PDCSAP is the pipeline's corrected flux (Smith et al. 2012; Stumpe et al. 2014). There are 18,299 cadences and no missing values. Each flux column was divided by its median.
 
 **Ephemeris.** A Box Least Squares search (Kovács et al. 2002) gave a first period. We then fitted a periodic trapezoid to the PDCSAP flux for the period, mid transit time, duration and ingress time. The results are period 0.941459 days, T0 1354.45776 (BTJD), total duration 0.0908 days (2.18 hours) and ingress time 0.0122 days. This fit is used only for timing and shape. These values agree with published ones (Shporer et al. 2019): their transit time near BTJD 1354.45782 and period 0.9414526 days.
 
@@ -156,25 +156,30 @@ These simulations show three things. A drift can bias depth. Detrending can remo
 
 ## Data and code availability
 
-Data: MAST, TESS sector 2, TIC 100100827, SPOC light curve file named above. A CSV extract is in `data/wasp18_sector2.csv`. Code, tables and figures: this repository.
+Data: MAST, TESS sector 2, TIC 100100827, SPOC light curve file named above. A CSV extract is in `data/wasp18_sector2.csv`. Code, tables and figures: this repository (github.com/shaheer1308/tess-transit-detrending).
+
+## Author's note
+
+I am a Pre Engineering student at Government College, Lahore, with a deep interest in astrophysics. Stars carry information about how the universe works, and much of it is still unread. I wrote this paper to learn how that information is drawn out of real telescope data. I began with one careful question: how does cleaning a light curve change a measurement we trust? Along the way I learned to download public NASA data, to test a method on simulations before using it on real data, and to report what the evidence does and does not show. I hope to extend this work to more planets, more TESS sectors, and full transit model fits, and to keep building toward research in astrophysics.
 
 ## Acknowledgements
 
-This paper uses data from the Mikulski Archive for Space Telescopes. The analysis code and this draft were developed with the help of an AI assistant (Claude). [Author: describe in your own words what you checked and decided yourself.]
+This paper uses data from the Mikulski Archive for Space Telescopes. It uses Lightkurve, Astropy (Astropy Collaboration et al. 2018), NumPy, SciPy, pandas and Matplotlib. I ran the simulations and the data download in Google Colab and published the repository. The analysis code and the first draft of this text were developed with the help of an AI assistant (Claude).
 
 ## References
 
-These were checked against the reference list of Shporer et al. (2019) or are standard citations. Please verify each one against the original before submission.
+Entries 3, 4 and 10 were checked against journal, archive or catalogue pages on 8 November 2026. The others match the reference list of Shporer et al. (2019) and should be checked against the originals before submission.
 
-1. Hellier, C., et al. 2009, Nature, 460, 1098.
-2. Shporer, A., et al. 2019, TESS full orbital phase curve of the WASP-18b system, AJ (arXiv:1811.06020).
-3. Kovács, G., Zucker, S., & Mazeh, T. 2002, A&A, 391, 369.
-4. Ricker, G. R., et al. 2015, JATIS, 1, 014003.
-5. Smith, J. C., et al. 2012, PASP, 124, 1000.
-6. Stumpe, M. C., et al. 2014, PASP, 126, 100.
-7. Jenkins, J. M., et al. 2016, Proc. SPIE, 9913, 99133E.
-8. Claret, A. 2017, A&A, 600, A30.
-9. Lightkurve Collaboration 2018, Astrophysics Source Code Library, ascl:1812.013.
+1. Astropy Collaboration, et al. 2018, AJ, 156, 123.
+2. Hellier, C., et al. 2009, Nature, 460, 1098.
+3. Shporer, A., et al. 2019, AJ, 157, 178, doi:10.3847/1538-3881/ab0f96 (arXiv:1811.06020).
+4. Kovács, G., Zucker, S., & Mazeh, T. 2002, A&A, 391, 369, doi:10.1051/0004-6361:20020802.
+5. Ricker, G. R., et al. 2015, JATIS, 1, 014003.
+6. Smith, J. C., et al. 2012, PASP, 124, 1000, doi:10.1086/667697.
+7. Stumpe, M. C., et al. 2014, PASP, 126, 100.
+8. Jenkins, J. M., et al. 2016, Proc. SPIE, 9913, 99133E.
+9. Claret, A. 2017, A&A, 600, A30.
+10. Lightkurve Collaboration 2018, Astrophysics Source Code Library, ascl:1812.013.
 
 ## Figures
 
